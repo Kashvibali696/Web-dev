@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div align="center">
+        <h3>Enter the side of the cube </h3>
+        <input type="text" id="volume">
+        <button id="vol" onclick="clicked()">click me</button> 
+    </div>
+    <script>
+        function clicked(){
+            const vol=document.querySelector('#volume').value;
+            side=vol*vol*vol;
+            console.log(side); }
+</script>
+</body>
+</html>

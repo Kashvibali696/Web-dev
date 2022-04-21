@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Move Circle</title>
+    <style>
+        .circle{
+            border: 1px solid red;
+            border-color: red;
+            background-color: blue;
+            height: 200px;
+            width: 200px;
+            border-radius: 100px;
+            position: absolute;
+            text-align: center;
+            line-height: 100px;        
+        }
+    </style>
+</head>
+<body>
+    <div class="circle">
+        click to move
+    </div>
+    <script>
+        const circle1=document.querySelector(".circle");
+        inc=0;
+        circle1.addEventListener('click', ()=>{
+            inc=inc+50;
+            circle1.style.top=inc+"px";
+        })
+
+    </script>
+</body>
+</html>
